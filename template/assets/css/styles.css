@@ -113,7 +113,7 @@
 	 /* for wrapper */
 	 .wrapper {
 		 max-width: 1360px;
-		 width: 60.1%;
+		 width: 75.1%;
 		 margin: 0 auto;
 	 }
 	 
@@ -123,3 +123,231 @@
 		 padding: 0;
 		 margin: 0;
 	 }
+
+	 
+	 /* Styling Attributes for Navbar in Header */
+	 header{
+		display: flex;
+	 }
+
+	 header a{
+		color: Black;
+	 }
+
+	 /* Styling Attributes for section banner */
+	 .banner{
+		background-image: url("/template/assets/images/banner/banner.jpg");
+		background-position:center;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 150px 0;
+		color: aliceblue;
+	 }
+
+	 .banner .wrapper{
+		padding-right: 40%;
+	 }
+
+	 .banner h2{
+		font-size: 3.5em;
+		color: black;
+	 }
+
+	 .banner a{
+		width: 50%;
+		padding: 15px 3em;
+		border-radius: 5px;
+		margin: 20px 0;
+		color: white;
+		background-color: black;
+		display: block;
+	 }
+
+	 /* Styling Attributes for benefits section */
+	 .benefits{
+		padding: 20px 0;
+		background-color: aliceblue;
+	 }
+
+	 .benefits h2{
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 20px;
+	 }
+
+	.benefits h6,
+	h5 {
+		font-size: 1.2em;
+		text-align: center;
+		padding: 10px 10px;
+		font-weight: 600;
+		line-height: 1.5em;
+	}
+
+	 .benefits ul{
+		display: flex;
+		margin: 0 25px;
+	 }
+
+	 .benefits li {
+		margin: 0 20px;
+	 }
+
+	 .benefits p{
+		text-align: center;
+	}
+
+	/* Styling Attributes for Featured-in */
+	.featured-in{
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	/* Styling Attributes for Coparison */
+	.Comparison{
+		background-color: aliceblue;
+	}
+	.Comparison h2{
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.Comparison table{
+		max-width: 100%;
+		width: 100%;
+		padding: 0 5%;
+	}
+
+	.Comparison tr{
+		border-bottom-style: groove;
+		border-bottom-width: 2px;
+	}
+
+	.Comparison p{
+		padding: 0% 20%;
+		margin-bottom: 20px;
+	}
+
+	/* Styling Attributes for Testimonial section */
+	.testimonials{
+		padding: 20px 0;
+	}
+
+	.testimonials h2{
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.testimonials p{
+		text-align: center;
+		padding: 0 25%;
+		font-size: 1.2em;
+	}
+
+	.testimonials li p{
+		padding: 0;
+		font-size: 0.9em;
+	}
+
+	.testimonials li{
+		text-align: center;
+		max-width: 50%;
+		width: 30%;
+		padding: 10px 1%;
+		flex-wrap: wrap;
+	}
+
+	.testimonials h6{
+		font-weight: 600;
+	}
+
+	.testimonials span{
+		font-size: 0.9em;
+	}
+
+	.testimonials a{
+		padding: 10px 3em;
+		border-radius: 5px;
+		border-color: black;
+		border-style: solid;
+		border-width: 2px;
+		margin: 20px 0;
+		color: black;
+		background-color: white;
+		text-align: center;
+		margin: 0 36%;
+	}
+
+
+	/* Styling Attributes for meet-expert */
+	.meet-expert{
+		padding: 20px 0;
+		background-image: url("/template/assets/images/banner/banner.jpg");
+		background-position: center;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 150px 0;
+		color: aliceblue;
+	}
+
+	.meet-expert h2{
+		font-size: 2.5em;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	.meet-expert .wrapper{
+		width: 50%;
+		margin-left:50%;
+		text-align: left;
+	}
+
+	.meet-expert a {
+		padding: 15px 3em;
+		border-radius: 5px;
+		margin: 20px 0;
+		color: white;
+		background-color: black;
+	}
+
+
+	/* Styling Attributes for trusted-by */
+	.trusted-by{
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	/* Styling Attributes for FAQ */
+	.faq{
+		padding: 20px 0;
+		text-align: left;
+		background-color: aliceblue;
+	}
+
+	.faq h2{
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.faq a {
+		padding: 10px 3em;
+		border-radius: 5px;
+		border-color: black;
+		border-style: solid;
+		border-width: 2px;
+		margin: 20px 0;
+		color: black;
+		background-color: white;
+		text-align: center;
+		margin: 0 36%;
+	}
+	/* Styling Attributes for end-question */
+	.end-question{
+		padding: 50px 0;
+		display: flex;
+	}
