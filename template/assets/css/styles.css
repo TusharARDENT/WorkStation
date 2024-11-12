@@ -279,6 +279,41 @@
 			font-weight: 700;
 			line-height: 1.3em;
 		}
+
+
+		/* Styling Attributes for Offerings */
+		.offerings .wrapper{
+			width: 90%;
+		}
+
+		.offerings{
+			padding: 40px 0;
+		}
+
+		.offerings h2{
+			text-align: center;
+			font-size: 3em;
+		}
+
+		.offerings p{
+			padding: 20px 18%;
+			text-align: center;
+		}
+		.offerings-section{
+			display: flex;
+		}
+
+		.workstation, .lounge{
+			background-color: burlywood;
+		}
+
+		.conference{
+			background-color: rgb(52, 82, 4);
+		}
+
+		.offerings-three {
+			background-color: burlywood;
+		}
 	/* Styling Attributes for Coparison */
 	.comparison{
 		background-color: aliceblue;
