@@ -113,7 +113,7 @@
 	 /* for wrapper */
 	 .wrapper {
 		 max-width: 1360px;
-		 width: 84.1%;
+		 width: 78.1%;
 		 margin: 0 auto;
 	 }
 	 
@@ -153,7 +153,9 @@
 		align-items: center;
 	 }
 
-	 .navbar-list li:nth-of-type(2){
+	 .navbar-list li:last-child{
+		flex-basis: 35%;
+		width: 20%;
 		text-align: left;
 		font-size: 0.9em;
 	 }
@@ -179,6 +181,7 @@
 	 }
 
 	 .banner a{
+		flex-basis: 40%;
 		width: 63.5%;
 		padding: 15px 1em;
 		border-radius: 5px;
@@ -189,8 +192,14 @@
 		text-align: center;
 	 }
 
+	 .navbar .build-button{
+		width: 60%;
+		margin-left: 35%;
+	 }
+
 	 .build-button{
-		width: 100%;
+		max-width: 60%;
+		width: 60%;
 		padding: 15px 1em;
 		border-radius: 5px;
 		margin: 20px 0;
@@ -314,7 +323,7 @@
 	/* Styling Attributes for Testimonial section */
 	.testimonials{
 		padding: 43px 0 53px;
-		background-color: bisque;
+		background-color: white;
 	}
 
 	.testimonials h2{
@@ -382,32 +391,35 @@
 	}
 	/* Styling Attributes for meet-expert */
 	.meet-expert{
-		padding: 20px 0;
+		padding: 85px 0;
 		background-image: url("/template/assets/images/banner/banner.jpg");
 		background-position: bottom;
 		width: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding: 150px 0;
-		color: aliceblue;
+		color: rgb(0, 0, 0);
 	}
 
 	.meet-expert h2{
-		font-size: 2.5em;
+		font-size: 3em;
+		line-height: 1.1em;
 		text-align: left;
 		margin-bottom: 20px;
 	}
 
+	.meet-expert p{
+		font-size: 1.2em;
+	}
 	.meet-expert .wrapper{
-		width: 50%;
-		margin-left:50%;
+		width: 35%;
+		margin-left:52%;
 		text-align: left;
 	}
 
 	.meet-expert a {
 		padding: 15px 3em;
 		border-radius: 5px;
-		margin: 20px 0;
+		margin: 23px 0 20px;
 		color: white;
 		background-color: black;
 	}
@@ -415,7 +427,7 @@
 
 	/* Styling Attributes for trusted-by */
 	.trusted-by{
-		padding: 20px 0 0;
+		padding: 20px 0 8px;
 		text-align: center;
 		margin-bottom: -12px;
 		background-color: rgb(67, 176, 193);
@@ -441,35 +453,58 @@
 	}
 
 	/* Styling Attributes for FAQ */
+
+	.faq .wrapper{
+		width: 70%;
+	}
 	.faq{
-		padding: 20px 0;
+		padding: 47px 0 42px;
 		text-align: left;
 		background-color: aliceblue;
 	}
 
 	.faq h2{
-		font-size: 2.5em;
+		font-size: 2.9em;
 		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
+	}
+
+	.faq-table th{
+		font-family: "Source Serif 4", serif;
+				max-width: 40%;
+		width: 15%;
+		font-size: 1.2em;
+		font-weight: 700;
 	}
 
 	.faq table td,
 	tr {
 		border-bottom: none;
+		font-size: 1em;
 		text-align: left;
 	}
 
-	.button2 {
+	.faq td{
+		width: 40%;
+		padding-left: 11%;
+	}
+
+	.faq-table{
+		border-spacing: 0 10px;
+		margin-bottom: 20px;
+	}
+
+	.faq .build-button{
+		width: 25%;
 		padding: 10px 3em;
 		border-radius: 5px;
 		border-color: black;
 		border-style: solid;
 		border-width: 2px;
-		margin: 20px 0;
+		margin: 20px 36%;
 		color: black;
 		background-color: white;
 		text-align: center;
-		margin: 0 36%;
 	}
 	/* Styling Attributes for end-question */
 	.end-question .wrapper{
