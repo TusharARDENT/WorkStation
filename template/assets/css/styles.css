@@ -97,7 +97,7 @@
 	 body {
 		 -webkit-box-sizing: border-box;
 		 box-sizing: border-box;
-		 font-family: sans-serif;
+		 font-family: "Mulish", sans-serif;
 	 }
 	 
 	 a {
@@ -113,7 +113,7 @@
 	 /* for wrapper */
 	 .wrapper {
 		 max-width: 1360px;
-		 width: 60.1%;
+		 width: 84.1%;
 		 margin: 0 auto;
 	 }
 	 
@@ -123,3 +123,324 @@
 		 padding: 0;
 		 margin: 0;
 	 }
+
+	 
+	 /* Styling Attributes for Navbar in Header */
+	 header{
+		display: flex;
+	 }
+
+	 header a{
+		color: Black;
+	 }
+
+	 h1{
+		font-family: "Crimson Pro", serif;
+		font-size: 4em;
+		font-weight: 700;
+	 }
+
+	 h2{
+		font-family: "Source Serif 4", serif;
+		font-size: 2.8em;
+		font-weight: 600;
+		line-height: 0.93em;
+	 }
+	 .navbar{
+		padding: 5px 0 10px;
+	 }
+
+	 .navbar ul{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	 }
+
+	 .navbar-list li:nth-of-type(2){
+		text-align: left;
+		font-size: 0.9em;
+	 }
+	 /* Styling Attributes for section banner */
+	 .banner{
+		background-image: url("/template/assets/images/banner/banner.jpg");
+		background-position:bottom;
+		opacity: 80%;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 90px 0 160px;
+		color: aliceblue;
+	 }
+
+	 .banner .wrapper{
+		padding-right: 50%;
+	 }
+
+	 .banner h2{
+		font-size: 3.5em;
+		color: rgb(0, 0, 0);
+	 }
+
+	 .banner a{
+		width: 63.5%;
+		padding: 15px 1em;
+		border-radius: 5px;
+		margin: 20px 0;
+		color: white;
+		background-color: black;
+		display: block;
+		text-align: center;
+	 }
+
+	 .build-button{
+		width: 100%;
+		padding: 15px 1em;
+		border-radius: 5px;
+		margin: 20px 0;
+		color: white;
+		background-color: black;
+		display: block;
+		text-align: center;
+	 }
+
+	 /* Styling Attributes for benefits section */
+	 .benefits{
+		padding: 20px 0;
+		background-color: aliceblue;
+	 }
+
+	 .benefits h2{
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 20px;
+	 }
+
+	.benefits h6,
+	h5 {
+		font-size: 1.2em;
+		text-align: center;
+		padding: 14px 10px 10px;
+		font-weight: 600;
+		line-height: 1.5em;
+	}
+
+	 .benefits ul{
+		display: flex;
+		margin: 0 25px;
+	 }
+
+	 .benefits li {
+		margin: 0 20px;
+	 }
+
+	 .benefits p{
+		text-align: center;
+	}
+
+	/* Styling Attributes for Featured-in */
+	.featured-in{
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	/* Styling Attributes for Coparison */
+	.comparison{
+		background-color: aliceblue;
+		text-align: center;
+		padding: 50px 10% 60px;
+	}
+	.comparison h2{
+		font-size: 3em;
+		text-align: center;
+		margin-bottom: 28px;
+	}
+	
+	.comparison-table tr td:first-child{
+		text-align: left;
+	}
+
+	.comparison table{
+		justify-content: center;
+		max-width: 100%;
+		width: 100%;
+		padding: 0 5%;
+	}
+
+	.comparison-table {
+		border-collapse: collapse;
+		width: 70%;
+		padding: 0 5%;
+	}
+		
+	.comparison-table th, td {
+		padding: 8px;
+		text-align: center;
+		border-bottom: 1px solid #ddd;
+		line-height: 1.6em;
+	}
+	.comparison p{
+		padding: 0% 13%;
+		margin-bottom: 45px;
+		font-size: 1.1em;
+	}
+
+	/* Styling Attributes for Testimonial section */
+	.testimonials{
+		padding: 43px 0 53px;
+		background-color: bisque;
+	}
+
+	.testimonials h2{
+		font-size: 3em;
+		text-align: center;
+		margin-bottom: 22px;
+	}
+
+	.testimonials p{
+		text-align: center;
+		padding: 0 25%;
+		font-size: 1.2em;
+		line-height: 1.3em;
+	}
+
+
+	.testimonials li p{
+		padding: 0;
+		padding-top: 0;
+		font-size: 1.1em;
+		margin-bottom: 10px;
+	}
+
+	.testimonials li{
+		text-align: center;
+		max-width: 50%;
+		width: 32%;
+		padding: 10px 1%;
+		flex-wrap: wrap;
+	}
+
+	.testimonials a{
+		width: 25%;
+		padding: 10px 3em;
+		border-radius: 5px;
+		border-color: black;
+		border-style: solid;
+		border-width: 2px;
+		color: black;
+		background-color: white;
+		text-align: center;
+		margin: 15px 37% 0;
+	}
+
+
+	.testimonials i{
+		display: block;
+		margin: 35px 0 10px;
+	}
+
+	.testimonials h6{
+		margin: 17px 0 7px;
+		font-size: 1.1em;
+		font-weight: 800;
+	}
+
+	.testimonials span{
+		font-size: 1.1em;
+	}
+
+	.testimonials-list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	/* Styling Attributes for meet-expert */
+	.meet-expert{
+		padding: 20px 0;
+		background-image: url("/template/assets/images/banner/banner.jpg");
+		background-position: bottom;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 150px 0;
+		color: aliceblue;
+	}
+
+	.meet-expert h2{
+		font-size: 2.5em;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	.meet-expert .wrapper{
+		width: 50%;
+		margin-left:50%;
+		text-align: left;
+	}
+
+	.meet-expert a {
+		padding: 15px 3em;
+		border-radius: 5px;
+		margin: 20px 0;
+		color: white;
+		background-color: black;
+	}
+
+
+	/* Styling Attributes for trusted-by */
+	.trusted-by{
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	/* Styling Attributes for FAQ */
+	.faq{
+		padding: 20px 0;
+		text-align: left;
+		background-color: aliceblue;
+	}
+
+	.faq h2{
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.button2 {
+		padding: 10px 3em;
+		border-radius: 5px;
+		border-color: black;
+		border-style: solid;
+		border-width: 2px;
+		margin: 20px 0;
+		color: black;
+		background-color: white;
+		text-align: center;
+		margin: 0 36%;
+	}
+	/* Styling Attributes for end-question */
+	.end-question .wrapper{
+		padding: 50px 0;
+		display: flex;
+	}
+
+
+	/* Styling Attributes for icons */
+	.yes::before{
+		font-family: "Font Awesome 5 Free";
+		font-weight: 400;
+		content: "\f058";
+	}
+
+	.five-stars::before{
+		font-family: "Font Awesome 5 Free";
+		font-weight: 400;
+		font-size: 1.6em;
+		content: "\f005\f005\f005\f005\f005";
+
+	}
+
+	.desk{
+		background-color: rgb(228, 102, 102);
+		width: 8em;
+		text-align: center;
+	}
