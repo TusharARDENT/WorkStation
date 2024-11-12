@@ -146,9 +146,6 @@
 		font-weight: 600;
 		line-height: 0.93em;
 	 }
-	 .navbar{
-		padding: 5px 0 10px;
-	 }
 
 	 .navbar ul{
 		display: flex;
@@ -168,7 +165,7 @@
 		width: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding: 90px 0 160px;
+		padding: 180px 0 180px;
 		color: aliceblue;
 	 }
 
@@ -205,23 +202,23 @@
 
 	 /* Styling Attributes for benefits section */
 	 .benefits{
-		padding: 20px 0;
+		padding: 60px 0 45px;
 		background-color: aliceblue;
 	 }
 
 	 .benefits h2{
-		font-size: 2.5em;
+		font-size: 3.05em;
 		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 45px;
 	 }
 
-	.benefits h6,
-	h5 {
-		font-size: 1.2em;
+	.benefits h6{
+		font-family: "Mulish", sans-serif;
+		font-size: 1.4em;
 		text-align: center;
-		padding: 14px 10px 10px;
-		font-weight: 600;
-		line-height: 1.5em;
+		padding: 12px 10px 20px;
+		font-weight: 700;
+		line-height: 1.3em;
 	}
 
 	 .benefits ul{
@@ -235,19 +232,49 @@
 
 	 .benefits p{
 		text-align: center;
+		font-size: 1.18em;
+		line-height: 1.3em;
+	}
+
+	.benefits-img{
+		width: 6.5em;
+		padding: 5px;
+		border-radius: 50px;
+		margin-left: 25%;		
+		background-color: antiquewhite;
 	}
 
 	/* Styling Attributes for Featured-in */
-	.featured-in{
-		padding: 20px 0;
-		text-align: center;
-	}
-
+		.featured-in {
+			padding: 15px 0 35px;
+			text-align: center;
+			margin-bottom: -12px;
+			background-color: rgb(67, 176, 193);
+		}
+	
+		.featured-in ul {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+	
+		.featured-in li {
+			width: 10%;
+		}
+	
+		.featured-in h5 {
+			font-family: "Mulish", sans-serif;
+			font-size: 1.4em;
+			text-align: center;
+			padding: 10px 10px 10px;
+			font-weight: 700;
+			line-height: 1.3em;
+		}
 	/* Styling Attributes for Coparison */
 	.comparison{
 		background-color: aliceblue;
 		text-align: center;
-		padding: 50px 10% 60px;
+		padding: 53px 10% 60px;
 	}
 	.comparison h2{
 		font-size: 3em;
@@ -388,8 +415,29 @@
 
 	/* Styling Attributes for trusted-by */
 	.trusted-by{
-		padding: 20px 0;
+		padding: 20px 0 0;
 		text-align: center;
+		margin-bottom: -12px;
+		background-color: rgb(67, 176, 193);
+	}
+
+	.trusted-by ul{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.trusted-by li{
+		width: 10%;
+	}
+
+	.trusted-by h5{
+		font-family: "Mulish", sans-serif;
+		font-size: 1.4em;
+		text-align: center;
+		padding: 12px 10px 0;
+		font-weight: 700;
+		line-height: 1.3em;
 	}
 
 	/* Styling Attributes for FAQ */
@@ -403,6 +451,12 @@
 		font-size: 2.5em;
 		text-align: center;
 		margin-bottom: 20px;
+	}
+
+	.faq table td,
+	tr {
+		border-bottom: none;
+		text-align: left;
 	}
 
 	.button2 {
@@ -419,11 +473,33 @@
 	}
 	/* Styling Attributes for end-question */
 	.end-question .wrapper{
-		padding: 50px 0;
+		width: 70%;
+		padding: 150px 0 54px;
 		display: flex;
+		justify-content: space-between;
 	}
 
+	.end-question img{
+		width: 100%;
+	}
+	.end-question h2{
+		font-size: 3.3em;
+		text-align: center;
+	}
 
+	.end-question-right{
+		flex-basis: 65%;
+		text-align: center;
+	}
+
+	.end-question figure{
+		width: 20%;
+	}
+
+	.end-question a{
+		padding: 13px 12%;
+		margin: 25px 0 0 7%;
+	}
 	/* Styling Attributes for icons */
 	.yes::before{
 		font-family: "Font Awesome 5 Free";
@@ -437,10 +513,4 @@
 		font-size: 1.6em;
 		content: "\f005\f005\f005\f005\f005";
 
-	}
-
-	.desk{
-		background-color: rgb(228, 102, 102);
-		width: 8em;
-		text-align: center;
 	}
