@@ -532,9 +532,17 @@
 	}
 
 	.end-question a{
-		padding: 13px 12%;
-		margin: 25px 0 0 7%;
-	}
+		width: 30%;
+			padding: 10px 3em;
+			border-radius: 5px;
+			border-color: black;
+			border-style: solid;
+			border-width: 2px;
+			color: black;
+			background-color: white;
+			text-align: center;
+			margin: 30px 35% 0;
+		}
 	/* Styling Attributes for icons */
 	.yes::before{
 		font-family: "Font Awesome 5 Free";
