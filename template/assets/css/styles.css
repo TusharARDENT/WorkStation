@@ -159,6 +159,10 @@
 		text-align: left;
 		font-size: 0.9em;
 	 }
+
+	 .dropdown{
+		display: none;
+	 }
 	 /* Styling Attributes for section banner */
 	 .banner{
 		background-image: url("/template/assets/images/banner/banner.jpg");
@@ -205,7 +209,7 @@
 	 .navbar-list{
 		gap: 20px;
 		color: black;
-		font-size: medium;
+		font-size: 0.8em;
 	 }
 	 .build-button{
 		max-width: 60%;
@@ -222,7 +226,6 @@
 	 /* Styling Attributes for benefits section */
 	 .benefits{
 		padding: 60px 0 45px;
-		background-color: aliceblue;
 	 }
 
 	 .benefits h2{
@@ -265,9 +268,8 @@
 
 	/* Styling Attributes for Featured-in */
 		.featured-in {
-			padding: 15px 0 35px;
+			padding: 0 ;
 			text-align: center;
-			margin-bottom: -12px;
 			background-color: rgb(67, 176, 193);
 		}
 	
@@ -281,125 +283,126 @@
 			width: 10%;
 		}
 	
-		.featured-in h5 {
+		.featured-in h6 {
 			font-family: "Mulish", sans-serif;
 			font-size: 1.4em;
 			text-align: center;
 			padding: 10px 10px 10px;
-			font-weight: 700;
+			font-weight: 600;
 			line-height: 1.3em;
 		}
 
 
 		/* Styling Attributes for Offerings */
 		.offerings .wrapper{
-			width: 95%;
+			width: 100%;
 			display: flex;
 			flex-direction: column;
+			padding: 40px 0;
 		}
 
-		.offerings{
-			padding: 40px 0;
-			position: relative;
+		.offerings-section{
+			display: flex;
 		}
 
 		.offerings h2{
 			text-align: center;
 			font-size: 3em;
+			padding: 20px 0 10px;
 		}
 
 		.offerings h3{
-			text-align: center;
-			font-size: 1.5em;
+			text-align: left;
+			font-size: 2.9em;
+			font-weight: 600;
+			font-family: "Source Serif 4", serif;
+
 		}
 
 		.offerings p{
-			padding: 20px 18%;
+			padding: 15px 18% 40px;
 			text-align: center;
-			margin: 25px;
-		}
-		.offerings-section{
-			display: flex;
+			font-size: 1.1em;
+			line-height: 1.3em;
+			
 		}
 
 		.offerings-section span{
 			display: block;
 			width: 100%;
 			text-align: left;
-			padding: 0 10%;
 		}
 
-		.workstation{
-			background-color: aliceblue;
-			width: 110;
-			z-index: -1;
-		}
-
-		.offerings-one img{
-			width: 110%;
+		.offerings-section p {
+			text-align: left;
+			padding: 0;
 			margin: 20px 0;
+			font-size: 1.15em;
 		}
 
-		.conference{
-			background-color: aliceblue;
-			width: 110;
-			z-index: -1;
-		}
-/* 
 		.workstation{
-			padding: 150px 2% 400px;
-			display: block;
-			background-color: burlywood;
-			width: 100%;
-			position: relative;
-			z-index: -3;
+			width: 63%;
+			padding: 170px 7% 150px 15%;
+			margin-left: 37%;
+			position: absolute;
+			background-color: aliceblue;
+			z-index: -2;
+		}
+		
+		.conference{
+			width: 47%;
+			padding: 170px 10% 150px 2%;
+			margin-right: 35%;
+			position: absolute;
+			background-color: cadetblue;
+			z-index: -1;
 		}
 
 		.lounge{
-			padding: 150px 2% 100px;
-			display: block;
-			background-color: burlywood;
-			width: 100%;
-			z-index: -3;
-			height: max-content;
+			width: 50%;
+			padding: 120px 10% 50px;
+			margin-left:43%;
+			margin-top: -30px;
+			position: absolute;
+			background-color: aliceblue;
+			z-index: -2;
 		}
 
-		.conference{
-			z-index: -1;
-			padding: 150px 2%;
-			margin: -100px;
-			display: block;
-			background-color: burlywood;
-			width: 100%;
+		.offerings-one figure{
+			width: 46%;
+			padding: 50px 20px 50px 0;	
+		}
+
+		.offerings-two figure{
+			width: 70%;
+			padding: 30px 20px;
+			margin-left: 43%;
+		}
+		.offerings-three figure{
+			width: 50%;
+			padding: 30px 20px;
+			margin-top: 10px;
+		}
+
+		.offer-btn{
+			border: solid 2px Black;
+			border-radius: 5px;
+			padding: 5px 2em;
+			color: white;
+			background-color: green;
+		}
+	
+		.offerings-two .offer-btn{
+			color: Black;
+			background-color: White;
+			border-color: black;
+
 		}
 		
-		.offerings-one img{
-			width: 110%;
-			margin: 40px 0;
-		}
-
-		.offerings-three img{
-			width: 110%;
-			margin: 40px 0;
-		}
-
-		.offerings-two img{
-			width: 110%;
-			margin: -40px 0 40px;
-		}
-
-		.conference{
-			background-color: rgb(52, 82, 4);
-		}
-
-		.offering-one{
-			z-index: -1;
-			width: 50%;
-		} */
 
 	/* Styling Attributes for Coparison */
 	.comparison{
-		background-color: aliceblue;
+		background-color: rgb(248, 234, 211);
 		text-align: center;
 		padding: 53px 10% 60px;
 	}
@@ -413,15 +416,32 @@
 		text-align: left;
 	}
 
+	.comparison-table tr td:nth-child(2){
+		width: 20%;
+		border-left: 3px solid green;
+		border-right: 3px solid green;
+	}
+
+	.comparison-table th:nth-child(2){
+		border-left: 3px solid green;
+		border-right: 3px solid green;
+		border-top: 3px solid green;
+	}
+
+	.table-border-bottom{
+		border-bottom: 3px solid green;
+	}
+
 	.comparison table{
 		justify-content: center;
 		max-width: 100%;
 		width: 100%;
-		padding: 0 5%;
+		padding: 0 0%;
 	}
 
 	.comparison-table {
 		border-collapse: collapse;
+		overflow-x: auto;
 		width: 70%;
 		padding: 0 5%;
 	}
@@ -542,6 +562,13 @@
 		background-color: black;
 	}
 
+	.meet-expert span{
+		color: white;
+		width: 7%;
+		display: block;
+		text-align: center;
+		margin-left: 40%;
+	}
 
 	/* Styling Attributes for trusted-by */
 	.trusted-by{
@@ -578,7 +605,7 @@
 	.faq{
 		padding: 47px 0 42px;
 		text-align: left;
-		background-color: aliceblue;
+		background-color:rgb(248, 234, 211);
 	}
 
 	.faq h2{
@@ -633,7 +660,7 @@
 	}
 
 	.end-question img{
-		width: 100%;
+		width: 125%;
 	}
 	.end-question h2{
 		font-size: 3.3em;
@@ -679,12 +706,25 @@
 
 
 	@media (min-width: 580px) and (max-width:1024px) {
+
+		.navbar li{display: none;}
+
 		.navbar-list{
+			flex-direction: row;
+		}
+
+		h1:hover~ .navbar-list li {
+			display: block;
+			background-color: black;
+		}
+		
+
+		/* .navbar-list{
 			flex-direction: column;
 			gap: 20px;
 			color: black;
 			font-size: medium;
-		 }
+		 } */
 
 		 .navbar-list li:last-child{
 			flex-basis: 35%;
@@ -711,6 +751,10 @@
 
 		.benefits li{
 			width: 40%;
+		}
+
+		.comparison .comparison-table{
+			overflow-x:auto;
 		}
 		.testimonials li{
 			width: 50%;
@@ -739,18 +783,84 @@
 			width: 70%;
 			margin: 30px 15% 0;
 		}
-		
+
+		.offerings h2 {
+			font-size: 1.7em;
+		}
+
+		.offerings p {
+			font-size: 0.9em;
+		}
+
+		.offerings-section h3 {
+			font-size: 1.5em;
+		}
+
+		.offerings-section span {
+			font-size: 0.8em;
+		}
+
+		.offer-btn {
+			padding: 5px 1em;
+			border-radius: 5px;
+			font-size: 00.6em;
+		}
+
+		.workstation {
+			padding: 100px 19% 190px 19%;
+		}
+
+		.workstation figure {
+			width: 70%;
+		}
+
+		.workstation p {
+			font-size: 0.7em;
+		}
+
+		.conference {
+			width: 55%;
+			padding-top: 120px;
+			padding-bottom: 150px;
+		}
+
+		.conference p {
+			font-size: 0.7em;
+			padding-right: 20%;
+		}
+
+		.lounge {
+			width: 50%;
+			padding-top: 120px;
+			padding-bottom: 150px;
+			padding-left: 15%;
+		}
+
+		.lounge p {
+			font-size: 0.7em;
+
+		}
+
 	}
 
 	@media (max-width: 580px) {
+
+		h2{
+			font-size: 1.2em;
+		}
 	
 		.comparison p{
 			padding: 0 0;
 		}
+
 		.banner .wrapper{
-			padding-right: 30%;
+			padding-right: 20%;
 		}
-		.navbar-list{
+	
+		.banner h2{
+			font-size: 2.4em;
+		}
+			.navbar-list{
 			flex-direction: column;
 			gap: 20px;
 			color: black;
@@ -785,34 +895,194 @@
 			line-height: 1.3em;
 		}
 
+		.benefits h2{
+			font-size: 1.8em;
+		}
+		.benefits h6{
+			font-size: 1.1em;
+		}
+
+		.comparison .wrapper{
+			width: 95%;
+		}
+
+		.comparison h2{
+			font-size: 1.5em;
+		}
+		.comparison p{
+			font-size: 0.9em;
+		}
+		.comparison .comparison-table{
+			display: block;
+			overflow-x:scroll;
+		} 
+
+		.comparison-table th, td{
+			font-size: 0.7em;
+			min-width: 150px;
+		}
+
+		.five-stars::before {
+			font-size: 1em;	
+		}
+
+		.testimonials h2{
+			font-size: 1.7em;
+		}
+		.testimonials p{
+			font-size: 1em;
+			padding: 10px 0 ;
+		}
 		.testimonials ul{
 			flex-wrap: wrap;
 			justify-content: center;
 		}
 		.testimonials li{
 			max-width: 80%;
-			width: 80%;
+			width: 50%;
 		}
 
+		.testimonials li span{
+			font-size: 0.8em;
+		}
+
+		.testimonials li h6{
+			font-size: 0.9em;
+		}
+
+		.testimonials li p{
+			font-size: 0.8em;
+		}
 		.testimonials .build-button{
 			max-width: 70%;
 			width: 60%;
 			margin: 10px 21%;
 		}
 
-		.testimonials p{
-			padding: 10px 0 ;
+		.meet-expert .wrapper{
+			width: 60% ;
+			margin-left: 20%;
 		}
 
+		.meet-expert h2{
+			font-size: 1.5em
+		}
+		.meet-expert p{
+			font-size: 1em;
+		}
+		.faq .wrapper{
+			width: 90%;
+		}
+
+		.featured-in h6{
+			font-size: 0.7em
+		}
+
+		.offerings h2{
+			font-size: 1.7em;
+		}
+
+		.offerings-section{
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.offerings p{ font-size: 0.9em;
+		}
+
+		.offerings-section h3{
+			font-size: 1.5em;
+		}
+
+		.offerings-section span{
+			font-size: 0.8em;
+		}
+
+		.offer-btn{
+			padding: 5px 1em;
+			border-radius: 5px;
+			font-size: 00.6em;
+		}
+		
+		.workstation{
+			padding: 20px 0 100px 10%;
+			flex-wrap: wrap;
+		}
+
+		.workstation figure{
+			width: 70%;
+			position: absolute;
+		}
+
+		.offerings-two figure{
+			width: 60%;
+			margin-left: 40%;
+		}
+		.workstation p{
+			font-size: 0.6em;
+		}
+
+		.conference{
+			width: 50%;
+			padding-top: 50px;
+			padding-bottom:80px;
+		}
+
+		.conference p{
+			font-size: 0.6em;
+			padding-right: 20%;
+		}
+
+		.lounge{
+			width: 55%;
+			padding-top: 40px;
+			padding-bottom: 50px;
+		}
+
+		.lounge p{
+			font-size: 0.7em;
+
+		}
+		.trusted-by h5{
+			font-size: 0.7em;
+		}
+		.faq-table{
+			display: block;
+			overflow-x: scroll;
+		}
+
+		.faq-table th{
+			min-width: 200px;
+		}
+
+		.faq-table td{
+			min-width: 600px;
+		}
 		.faq .build-button{
 			width: 60%;
 			padding: 10px 1em;
 			margin:20px 25%;
 		}
 
+		.faq h2{
+			font-size: 1.5em;
+		}
+
+		.faq-table th{
+			font-size: 1em;
+		}
+
+		.faq-table td{
+			font-size: 1em;
+			line-height: 1.2em;
+		}
+
+		.end-question h2{
+			font-size: 1.7em;
+	 	}
 		.end-question .wrapper{
 			flex-direction: column;
 			align-items: center;
+			padding-top: 50px;
 		}
 		
 		.end-question figure{
@@ -821,7 +1091,47 @@
 		}
 
 		.end-question .button2{
-			width: 50%;
+			width: 60%;
 			margin: 30px 20% 0;
 		}
+	}
+
+	@media(max-width: 425px){
+				.workstation {
+						padding: 20px 0 100px 10%;
+					}
+				
+					.workstation figure {
+						width: 70%;
+						position: absolute;
+					}
+				
+					.offerings-two figure {
+						width: 60%;
+						margin-left: 40%;
+					}
+				
+					.workstation p {
+						font-size: 0.5em;
+					}
+				
+					.conference {
+						width: 50%;
+						padding-top: 50px;
+						padding-bottom: 80px;
+					}
+				
+					.conference p {
+						font-size: 0.5em;
+						padding-right: 7%;
+					}
+				
+					.lounge {
+						padding-top: 40px;
+					}
+				
+					.lounge p {
+						font-size: 0.5em;
+				
+					}
 	}
