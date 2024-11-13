@@ -159,6 +159,10 @@
 		text-align: left;
 		font-size: 0.9em;
 	 }
+
+	 .dropdown{
+		display: none;
+	 }
 	 /* Styling Attributes for section banner */
 	 .banner{
 		background-image: url("/template/assets/images/banner/banner.jpg");
@@ -267,7 +271,6 @@
 		.featured-in {
 			padding: 15px 0 35px;
 			text-align: center;
-			margin-bottom: -12px;
 			background-color: rgb(67, 176, 193);
 		}
 	
@@ -281,70 +284,108 @@
 			width: 10%;
 		}
 	
-		.featured-in h5 {
+		.featured-in h6 {
 			font-family: "Mulish", sans-serif;
 			font-size: 1.4em;
 			text-align: center;
 			padding: 10px 10px 10px;
-			font-weight: 700;
+			font-weight: 600;
 			line-height: 1.3em;
 		}
 
 
 		/* Styling Attributes for Offerings */
 		.offerings .wrapper{
-			width: 95%;
+			width: 100%;
 			display: flex;
 			flex-direction: column;
+			padding: 40px 0;
 		}
 
-		.offerings{
-			padding: 40px 0;
-			position: relative;
+		.offerings-section{
+			display: flex;
 		}
 
 		.offerings h2{
 			text-align: center;
 			font-size: 3em;
+			padding: 20px 0 10px;
 		}
 
 		.offerings h3{
-			text-align: center;
-			font-size: 1.5em;
+			text-align: left;
+			font-size: 2.9em;
+			font-weight: 600;
+			font-family: "Source Serif 4", serif;
+
 		}
 
 		.offerings p{
-			padding: 20px 18%;
+			padding: 15px 18% 40px;
 			text-align: center;
-			margin: 25px;
-		}
-		.offerings-section{
-			display: flex;
+			font-size: 1.1em;
+			line-height: 1.3em;
+			
 		}
 
 		.offerings-section span{
 			display: block;
 			width: 100%;
 			text-align: left;
-			padding: 0 10%;
+		}
+
+		.offerings-section p {
+			text-align: left;
+			padding: 0;
+			margin: 20px 0;
+			font-size: 1.15em;
 		}
 
 		.workstation{
+			width: 63%;
+			padding: 170px 15% 150px;
+			margin-left: 37%;
+			position: absolute;
 			background-color: aliceblue;
-			width: 110;
-			z-index: -1;
+			z-index: -2;
 		}
-
-		.offerings-one img{
-			width: 110%;
-			margin: 20px 0;
-		}
-
+		
 		.conference{
-			background-color: aliceblue;
-			width: 110;
+			width: 47%;
+			padding: 170px 2% 150px;
+			margin-right: 35%;
+			position: absolute;
+			background-color: cadetblue;
 			z-index: -1;
 		}
+
+		.lounge{
+			width: 50%;
+			padding: 120px 10% 50px;
+			margin-left:43%;
+			margin-top: -30px;
+			position: absolute;
+			background-color: aliceblue;
+			z-index: -2;
+		}
+
+		.offerings-one figure{
+			width: 46%;
+			padding: 50px 20px 50px 0;	
+		}
+
+		.offerings-two figure{
+			width: 70%;
+			padding: 30px 20px;
+			margin-left: 43%;
+		}
+		.offerings-three figure{
+			width: 50%;
+			padding: 30px 20px;
+			margin-top: 10px;
+		}
+	
+		
 /* 
 		.workstation{
 			padding: 150px 2% 400px;
@@ -411,6 +452,21 @@
 	
 	.comparison-table tr td:first-child{
 		text-align: left;
+	}
+
+	.comparison-table tr td:nth-child(2){
+		border-left: 3px solid green;
+		border-right: 3px solid green;
+	}
+
+	.comparison-table th:nth-child(2){
+		border-left: 3px solid green;
+		border-right: 3px solid green;
+		border-top: 3px solid green;
+	}
+
+	.table-border-bottom{
+		border-bottom: 3px solid green;
 	}
 
 	.comparison table{
@@ -633,7 +689,7 @@
 	}
 
 	.end-question img{
-		width: 100%;
+		width: 125%;
 	}
 	.end-question h2{
 		font-size: 3.3em;
