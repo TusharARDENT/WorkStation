@@ -562,6 +562,13 @@
 		background-color: black;
 	}
 
+	.meet-expert span{
+		color: white;
+		width: 7%;
+		display: block;
+		text-align: center;
+		margin-left: 40%;
+	}
 
 	/* Styling Attributes for trusted-by */
 	.trusted-by{
@@ -699,12 +706,25 @@
 
 
 	@media (min-width: 580px) and (max-width:1024px) {
+
+		.navbar li{display: none;}
+
 		.navbar-list{
+			flex-direction: row;
+		}
+
+		h1:hover~ .navbar-list li {
+			display: block;
+			background-color: black;
+		}
+		
+
+		/* .navbar-list{
 			flex-direction: column;
 			gap: 20px;
 			color: black;
 			font-size: medium;
-		 }
+		 } */
 
 		 .navbar-list li:last-child{
 			flex-basis: 35%;
@@ -763,7 +783,64 @@
 			width: 70%;
 			margin: 30px 15% 0;
 		}
-		
+
+		.offerings h2 {
+			font-size: 1.7em;
+		}
+
+		.offerings p {
+			font-size: 0.9em;
+		}
+
+		.offerings-section h3 {
+			font-size: 1.5em;
+		}
+
+		.offerings-section span {
+			font-size: 0.8em;
+		}
+
+		.offer-btn {
+			padding: 5px 1em;
+			border-radius: 5px;
+			font-size: 00.6em;
+		}
+
+		.workstation {
+			padding: 100px 19% 190px 19%;
+		}
+
+		.workstation figure {
+			width: 70%;
+		}
+
+		.workstation p {
+			font-size: 0.7em;
+		}
+
+		.conference {
+			width: 55%;
+			padding-top: 120px;
+			padding-bottom: 150px;
+		}
+
+		.conference p {
+			font-size: 0.7em;
+			padding-right: 20%;
+		}
+
+		.lounge {
+			width: 50%;
+			padding-top: 120px;
+			padding-bottom: 150px;
+			padding-left: 15%;
+		}
+
+		.lounge p {
+			font-size: 0.7em;
+
+		}
+
 	}
 
 	@media (max-width: 580px) {
@@ -904,6 +981,11 @@
 		.offerings h2{
 			font-size: 1.7em;
 		}
+
+		.offerings-section{
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
 		.offerings p{ font-size: 0.9em;
 		}
 
@@ -922,28 +1004,36 @@
 		}
 		
 		.workstation{
-			padding: 40px 0 60px 10%;
+			padding: 20px 0 100px 10%;
+			flex-wrap: wrap;
 		}
 
 		.workstation figure{
 			width: 70%;
+			position: absolute;
+		}
+
+		.offerings-two figure{
+			width: 60%;
+			margin-left: 40%;
 		}
 		.workstation p{
-			font-size: 0.7em;
+			font-size: 0.6em;
 		}
 
 		.conference{
-			width: 70%;
-			padding-top: 40px;
-			padding-bottom: 50px;
+			width: 50%;
+			padding-top: 50px;
+			padding-bottom:80px;
 		}
 
 		.conference p{
-			font-size: 0.7em;
+			font-size: 0.6em;
+			padding-right: 20%;
 		}
 
 		.lounge{
-			width: 70%;
+			width: 55%;
 			padding-top: 40px;
 			padding-bottom: 50px;
 		}
@@ -1004,4 +1094,44 @@
 			width: 60%;
 			margin: 30px 20% 0;
 		}
+	}
+
+	@media(max-width: 425px){
+				.workstation {
+						padding: 20px 0 100px 10%;
+					}
+				
+					.workstation figure {
+						width: 70%;
+						position: absolute;
+					}
+				
+					.offerings-two figure {
+						width: 60%;
+						margin-left: 40%;
+					}
+				
+					.workstation p {
+						font-size: 0.5em;
+					}
+				
+					.conference {
+						width: 50%;
+						padding-top: 50px;
+						padding-bottom: 80px;
+					}
+				
+					.conference p {
+						font-size: 0.5em;
+						padding-right: 7%;
+					}
+				
+					.lounge {
+						padding-top: 40px;
+					}
+				
+					.lounge p {
+						font-size: 0.5em;
+				
+					}
 	}
