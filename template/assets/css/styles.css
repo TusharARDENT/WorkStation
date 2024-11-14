@@ -126,14 +126,16 @@
 
 	 
 	 /* Styling Attributes for Navbar in Header */
-	 header{
-		display: flex;
-	 }
 
 	 header a{
 		color: Black;
 	 }
 
+	 header .wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	 }
 	 h1{
 		font-family: "Crimson Pro", serif;
 		font-size: 4em;
@@ -146,8 +148,15 @@
 		font-weight: 600;
 		line-height: 0.93em;
 	 }
+	 .navbar{
+		width: 100%;
+		justify-content: end;
+		align-items: center;
+		margin-left: 15%;
+	 }
 
 	 .navbar ul{
+		flex-basis: 70%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -263,14 +272,16 @@
 		padding: 5px;
 		border-radius: 50px;
 		margin-left: 25%;		
-		background-color: antiquewhite;
+		background-color: rgb(244, 239, 234);
 	}
 
 	/* Styling Attributes for Featured-in */
 		.featured-in {
 			padding: 0 ;
 			text-align: center;
+			color: white;
 			background-color: rgb(67, 176, 193);
+			
 		}
 	
 		.featured-in ul {
@@ -345,16 +356,17 @@
 			padding: 170px 7% 150px 15%;
 			margin-left: 37%;
 			position: absolute;
-			background-color: aliceblue;
+			background-color:  rgb(244, 239, 234);
 			z-index: -2;
 		}
 		
 		.conference{
+			color: white;
 			width: 47%;
 			padding: 170px 10% 150px 2%;
 			margin-right: 35%;
 			position: absolute;
-			background-color: cadetblue;
+			background-color: rgb(48,68,46);
 			z-index: -1;
 		}
 
@@ -364,7 +376,7 @@
 			margin-left:43%;
 			margin-top: -30px;
 			position: absolute;
-			background-color: aliceblue;
+			background-color:  rgb(244, 239, 234);
 			z-index: -2;
 		}
 
@@ -385,11 +397,10 @@
 		}
 
 		.offer-btn{
-			border: solid 2px Black;
 			border-radius: 5px;
-			padding: 5px 2em;
+			padding: 10px 2em;
 			color: white;
-			background-color: green;
+			background-color: rgb(48,68,46);
 		}
 	
 		.offerings-two .offer-btn{
@@ -402,7 +413,7 @@
 
 	/* Styling Attributes for Coparison */
 	.comparison{
-		background-color: rgb(248, 234, 211);
+		background-color: rgb(244, 239, 234);
 		text-align: center;
 		padding: 53px 10% 60px;
 	}
@@ -497,11 +508,11 @@
 		width: 25%;
 		padding: 10px 3em;
 		border-radius: 5px;
-		border-color: black;
+		border-color: rgb(48,68,46);
 		border-style: solid;
-		border-width: 2px;
-		color: black;
-		background-color: white;
+		border-width: 4px;
+		font-weight: 600;
+		color: rgb(48,68,46);
 		text-align: center;
 		margin: 15px 37% 0;
 	}
@@ -605,7 +616,7 @@
 	.faq{
 		padding: 47px 0 42px;
 		text-align: left;
-		background-color:rgb(248, 234, 211);
+		background-color: rgb(244, 239, 234);
 	}
 
 	.faq h2{
@@ -650,6 +661,11 @@
 		color: black;
 		background-color: white;
 		text-align: center;
+	}
+
+	.faq .build-button {
+		background-color: rgb(48,68,46);
+		color: white;
 	}
 	/* Styling Attributes for end-question */
 	.end-question .wrapper{
@@ -699,9 +715,8 @@
 		font-family: "Font Awesome 5 Free";
 		font-weight: 400;
 		font-size: 1.6em;
-		content: "\f005\f005\f005\f005\f005";
+		content: "\f006\f005\f005\f005\f005";
 		color: dimgray;
-
 	}
 
 
@@ -709,6 +724,9 @@
 
 		.navbar li{display: none;}
 
+		.build-button{
+			padding: 10px 3em;
+		}
 		.navbar-list{
 			flex-direction: row;
 		}
@@ -716,6 +734,13 @@
 		h1:hover~ .navbar-list li {
 			display: block;
 			background-color: black;
+		}
+
+		.banner h2{
+			font-size: 2.5em;
+		}
+		.banner span{
+			font-size: 0.9em;
 		}
 		
 
@@ -748,13 +773,37 @@
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-
+		.benefits h6{
+			font-size: 1.2em;
+		}
+		.benefits h2{
+			font-size: 2em;
+		}
 		.benefits li{
 			width: 40%;
 		}
 
+		.benefits p{
+			font-size: 0.9em;
+			margin-bottom: 30px;
+		}
+
 		.comparison .comparison-table{
 			overflow-x:auto;
+		}
+		.comparison h2{
+			font-size: 2em;
+		}
+
+		.comparison p{
+			font-size: 0.9em;
+		}
+		.comparison-table td, th{
+			font-size: 0.9em;
+		}
+		
+		.testimonials h2{
+			font-size: 2em;
 		}
 		.testimonials li{
 			width: 50%;
@@ -762,7 +811,12 @@
 		}
 
 		.testimonials p{
+			font-size: 0.9em;
 			padding: 0 15%;
+		}
+
+		.testimonials-list li{
+			font-size: 0.9em;
 		}
 
 		.testimonials a {
@@ -774,10 +828,19 @@
 			width: 40%;
 			margin:20px 29%;
 		}
+		.faq h2{
+			font-size: 2em;
+		}
+
+		.faq-table th,td{
+			font-size: 0.9em;
+		}
 		.faq .build-button{
 			width: 40%;
 			padding: 10px 1em;
 			margin:20px 29%;
+			background-color: rgb(48,68,46);
+			color: white;
 		}
 		.end-question .button2{
 			width: 70%;
@@ -849,6 +912,20 @@
 			font-size: 1.2em;
 		}
 	
+		
+		.banner a{
+			padding: 15px 0;
+			font-size: 0.7em;
+		}
+
+		.build-button{
+			padding: 15px 0;
+			font-size: 0.7em;
+		}
+
+		.end-question .button2{
+			padding: 15px 0;
+		}
 		.comparison p{
 			padding: 0 0;
 		}
@@ -860,6 +937,9 @@
 		.banner h2{
 			font-size: 2.4em;
 		}
+
+		.navbar li{display: none;}
+
 			.navbar-list{
 			flex-direction: column;
 			gap: 20px;
@@ -879,6 +959,9 @@
 			font-size: 0.8em;
 		 }
 
+		 .benefits-img{
+			margin-left: 23%;		
+		 }
 		.benefits ul{
 			flex-wrap: wrap;
 			justify-content: center;
@@ -968,7 +1051,7 @@
 			font-size: 1.5em
 		}
 		.meet-expert p{
-			font-size: 1em;
+			font-size: 0.9em;
 		}
 		.faq .wrapper{
 			width: 90%;
