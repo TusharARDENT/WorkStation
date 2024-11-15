@@ -525,11 +525,15 @@
 	.meet-expert .wrapper{
 		width: 35%;
 		margin-left:52%;
-		text-align: left;
 	}
 
-	section .wrapper .meet-expert  .section-title h3{
+	.meet-expert .wrapper .section-title{
 		text-align:  left;
+	}
+
+	.meet-expert .wrapper .section-desc{
+		text-align: left;
+		padding-left: 0;
 	}
 	.meet-expert a {
 		padding: 15px 3em;
