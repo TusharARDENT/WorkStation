@@ -6,1166 +6,1252 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-	 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-	 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-	 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-	 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-	 tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-	 figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-	 time, mark, audio, video {
-		 margin: 0;
-		 padding: 0;
-		 border: 0;
-		 font-size: 100%;
-		 font: inherit;
-		 vertical-align: baseline;
-	 }
-	 
-	 /* HTML5 display-role reset for older browsers */
-	 article, aside, details, figcaption, figure,
-	 footer, header, hgroup, menu, nav, section {
-		 display: block;
-	 }
-	 
-	 /* Force scrollbar */
-	 html {
-		 overflow-y: scroll;
-	 }
-	 
-	 /* Align radios and text inputs with their label */
-	 input[type=radio] {
-		 vertical-align: text-bottom;
-	 }
-	 
-	 /* Hand cursor on clickable input elements */
-	 label,
-	 input[type=button],
-	 input[type=submit],
-	 button {
-		 cursor: pointer;
-	 }
-	 
-	 strong {
-		 font-weight: bold;
-		 font-family: inherit;
-		 font-size: inherit;
-	 }
-	 
-	 em {
-		 font-style: italic;
-	 }
-	 
-	 img {
-		 width: 100%;
-		 border: 0;
-		 vertical-align: middle;
-	 }
-	 
-	 sub,
-	 sup {
-		 vertical-align: baseline;
-		 position: relative;
-		 font-size: 55%;
-		 line-height: 0;
-	 }
-	 
-	 sup {
-		 top: -0.7em;
-	 }
-	 
-	 sub {
-		 bottom: -0.25em;
-	 }
-	 
-	 /* 1.2. Clear Fix
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+/* Force scrollbar */
+html {
+	overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type=radio] {
+	vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type=button],
+input[type=submit],
+button {
+	cursor: pointer;
+}
+
+strong {
+	font-weight: bold;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+em {
+	font-style: italic;
+}
+
+img {
+	width: 100%;
+	border: 0;
+	vertical-align: middle;
+}
+
+sub,
+sup {
+	vertical-align: baseline;
+	position: relative;
+	font-size: 55%;
+	line-height: 0;
+}
+
+sup {
+	top: -0.7em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
 			========================== */
-	 .cf:before,
-	 .cf:after {
-		 display: table;
-		 content: " ";
-	 }
-	 
-	 .cf:after {
-		 clear: both;
-	 }
-	 
-	 .cf {
-		 zoom: 1;
-	 }
-	 
-	 /* for all */
-	 body {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 font-family: "Mulish", sans-serif;
-	 }
-	 
-	 a {
-		 display: inline-block;
-		 text-decoration: none;
-	 }
-	 
-	 li {
-		 display: inline-block;
-		 list-style-type: none;
-	 }
-	 
-	 /* for wrapper */
-	 .wrapper {
-		 max-width: 1360px;
-		 width: 78.1%;
-		 margin: 0 auto;
-	 }
-	 
-	 * {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 padding: 0;
-		 margin: 0;
-	 }
+.cf:before,
+.cf:after {
+	display: table;
+	content: " ";
+}
 
-	 
-	 /* Styling Attributes for Navbar in Header */
+.cf:after {
+	clear: both;
+}
 
-	 header a{
-		color: Black;
-	 }
+.cf {
+	zoom: 1;
+}
 
-	 header .wrapper{
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-	 }
-	 h1{
-		font-family: "Crimson Pro", serif;
-		font-size: 4em;
-		font-weight: 700;
-	 }
-		
-	 section .wrapper .section-title{
-		margin-bottom: 20px;
-		text-align: center;
-		font-family: "Source Serif 4", serif;
-		font-size: 2.8em;
-		font-weight: 600;
-		line-height: 0.93em;
-		
-	 }
-	 .navbar{
-		width: 100%;
-		padding: 5px 0;
-		margin-left: 15%;
-		justify-content: end;
-		align-items: center;
+/* for all */
+body {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Mulish", sans-serif;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+	max-width: 1360px;
+	width: 78.1%;
+	margin: 0 auto;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Styling Attributes for Navbar in Header */
+
+header a {
+	color: Black;
+}
+
+header .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+h1 {
+	font-family: "Crimson Pro", serif;
+	font-size: 3.5em;
+	font-weight: 700;
+}
+
+section .wrapper .section-title {
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: "Source Serif 4", serif;
+	font-size: 2.8em;
+	font-weight: 600;
+	line-height: 0.93em;
+
+}
+.button{
+	width: 55%;
+    padding: 12px 1em;
+    border-radius: 2px;
+    margin: 20px 0px;
+    color: white;
+    background-color: rgb(48, 68, 46);
+	font-weight: 600;
+    display: block;
+    text-align: center;
+} 
+.navbar {
+	width: 100%;
+	margin-left: 3%;
+	justify-content: end;
+	align-items: center;
+}
+
+.navbar ul {
+	flex-basis: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-list li:last-child {
+	flex-basis: 35%;
+	width: 20%;
+	text-align: left;
+	font-size: 0.9em;
+}
+
+.navbar .button{
+	width: 80%;
+	margin-left: 20%;
+}
+
+.hamburger-menu::before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 1.2em;
+	font-weight: 600;
+	content: "\f0c9";
+}
+
+.hamburger-menu span {
+	display: none;
+}
+
+.hamburger-menu {
+	display: none;
+}
+
+
+/* Styling Attributes for section banner */
+.banner {
+	background-image: url("/template/assets/images/banner/banner.jpg");
+	background-position: bottom;
+	opacity: 80%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 60px 0;
+	color: aliceblue;
+}
+
+.banner .button{
+	width: 53%;
+}
+
+.banner .wrapper {
+	padding-right: 45%;
+}
+
+.banner-title {
+	padding-top: 30px;
+	margin-bottom: 10px;
+	font-family: "Source Serif 4", serif;
+	font-size: 3.35em;
+	text-align: left;
+	font-weight: 600;
+	color: black;
+	line-height: 1em;
+}
+
+
+.banner li {
+	font-size: 1.1em;
+	margin: 8px 0;
+	color: black;
+}
+
+.navbar-list {
+	gap: 20px;
+	color: black;
+	font-size: 0.8em;
+}
+
+/* Styling Attributes for benefits section */
+.benefits {
+	padding: 60px 0 45px;
+}
+
+.benefits h6 {
+	font-family: "Mulish", sans-serif;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 12px 10px 15px;
+	font-weight: 700;
+	line-height: 1.3em;
+}
+
+.benefits ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.benefits li {
+	margin: 0 20px;
+}
+
+section .wrapper .list-desc {
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+section .wrapper .section-desc {
+	padding: 15px 18% 40px;
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 1.3em;
+
+}
+
+
+.benefits-img {
+	width: 6.5em;
+	padding: 5px;
+	border-radius: 50px;
+	margin-left: 28%;
+	background-color: rgb(244, 239, 234);
+}
+
+/* Styling Attributes for Featured-in */
+/* Styling Attributes for trusted-by */
+
+.customers ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.customers li {
+	width: 10%;
+}
+
+.customers h6 {
+	font-family: "Mulish", sans-serif;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 10px 10px 0;
+	font-weight: 600;
+	line-height: 1em;
+}
+
+.customers {
+	text-align: center;
+	background-color: rgb(48, 68, 46);
+	color: white;
+}
+
+
+/* Styling Attributes for Offerings */
+.offerings .wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+}
+
+.offerings-section {
+	display: flex;
+}
+
+
+.offerings h4 {
+	text-align: left;
+	font-size: 2.9em;
+	font-weight: 600;
+	font-family: "Source Serif 4", serif;
+
+}
+
+
+.offerings-section span {
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+
+.offerings-section p {
+	text-align: left;
+	padding: 0;
+	margin: 20px 0;
+	font-size: 1.15em;
+}
+
+.workstation {
+	width: 63%;
+	padding: 150px 0 150px 15%;
+	margin-left: 37%;
+	position: absolute;
+	background-color: rgb(244, 239, 234);
+	z-index: -2;
+}
+
+.conference {
+	color: white;
+	width: 47%;
+	padding: 170px 7% 150px 2%;
+	margin-right: 35%;
+	position: absolute;
+	background-color: rgb(48, 68, 46);
+	z-index: -1;
+}
+
+.lounge {
+	width: 50%;
+	padding: 120px 5% 50px 10%;
+	margin-left: 43%;
+	margin-top: -30px;
+	position: absolute;
+	background-color: rgb(244, 239, 234);
+	z-index: -2;
+}
+
+.offerings-one figure {
+	width: 46%;
+	padding: 50px 20px 50px 0;
+}
+
+.offerings-two figure {
+	width: 70%;
+	padding: 30px 20px;
+	margin-left: 43%;
+}
+
+.offerings-three figure {
+	width: 50%;
+	padding: 30px 20px;
+	margin-top: 10px;
+}
+
+.offerings-two .button {
+	color: rgb(48, 68, 46);
+	background-color: White;
+	border-color: black;
+
+}
+
+
+/* Styling Attributes for Coparison */
+.comparison {
+	background-color: rgb(244, 239, 234);
+	text-align: center;
+	padding: 53px 10% 60px;
+}
+
+.comparison-table tr td:first-child {
+	text-align: left;
+}
+
+.comparison-table tr td:nth-child(2) {
+	width: 20%;
+	border-left: 3px solid green;
+	border-right: 3px solid green;
+}
+
+.comparison-table th:nth-child(2) {
+	border-left: 3px solid green;
+	border-right: 3px solid green;
+	border-top: 3px solid green;
+}
+
+.table-border-bottom {
+	border-bottom: 3px solid green;
+}
+
+.comparison table {
+	justify-content: center;
+	max-width: 100%;
+	width: 100%;
+	padding: 0 0%;
+}
+
+.comparison-table {
+	border-collapse: collapse;
+	overflow-x: auto;
+	width: 70%;
+	padding: 0 5%;
+}
+
+.comparison-table th,
+td {
+	padding: 8px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	line-height: 1.6em;
+}
+
+/* Styling Attributes for Testimonial section */
+.testimonials {
+	padding: 43px 0 53px;
+	background-color: white;
+}
+
+
+.testimonials li {
+	text-align: center;
+	max-width: 50%;
+	width: 28%;
+	padding: 10px 1%;
+	flex-wrap: wrap;
+}
+
+.testimonials i {
+	display: block;
+	margin: 35px 0 10px;
+}
+
+.testimonials h6 {
+	margin: 17px 0 7px;
+	font-size: 1.1em;
+	font-weight: 800;
+}
+
+.testimonials span {
+	font-size: 1.1em;
+}
+
+.testimonials .button{
+	width: 20%;
+	padding: 7px 1em;
+	margin-left: 40%;
+	background-color: transparent;
+	border: 3px solid;
+	border-color: rgb(48, 68, 46);
+	color: rgb(48, 68, 46);
+}
+.testimonials-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* Styling Attributes for meet-expert */
+.meet-expert {
+	padding: 85px 0;
+	background-image: url("/template/assets/images/experts/expert.png");
+	background-color: rgb(189, 204, 199);
+	background-position:left bottom;
+	background-attachment: local;
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+
+.meet-expert .wrapper {
+	width: 35%;
+	margin-left: 52%;
+}
+
+.meet-expert .wrapper .section-title {
+	text-align: left;
+}
+
+.meet-expert .wrapper .section-desc {
+	text-align: left;
+	padding-left: 0;
+}
+
+/* Styling Attributes for FAQ */
+
+.faq .wrapper {
+	width: 70%;
+}
+
+.faq {
+	padding: 47px 0 42px;
+	text-align: left;
+	background-color: rgb(244, 239, 234);
+}
+
+.faq-table th {
+	font-family: "Source Serif 4", serif;
+	max-width: 40%;
+	width: 15%;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.faq table td,
+tr {
+	border-bottom: none;
+	font-size: 1em;
+	text-align: left;
+}
+
+.faq td {
+	width: 40%;
+	padding-left: 11%;
+}
+
+.faq-table {
+	border-spacing: 0 10px;
+	margin-bottom: 20px;
+}
+
+.faq .button{
+	width: 25%;
+	margin-left: 37%;
+}
+
+
+/* Styling Attributes for end-question */
+.end-question .wrapper {
+	width: 70%;
+	padding: 100px 0 54px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.end-question img {
+	width: 125%;
+	margin-top: -30%;
+}
+
+.end-question-right {
+	flex-basis: 65%;
+	text-align: center;
+}
+
+.end-question figure {
+	width: 20%;
+}
+
+.end-question .button{
+	width: 40%;
+	margin: 35px 0 15px 35%;
+	background-color: transparent;
+	color: rgb(48, 68, 46);
+	border: 2px solid;
+}
+
+/* Styling Attributes for icons */
+
+.banner-list-item::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+	content: "\f058";
+	margin-right: 10px;
+}
+
+.five-stars::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+	font-size: 1.6em;
+	content: "\f006\f005\f005\f005\f005";
+	color: dimgray;
+}
+
+.five-stars span {
+	display: none;
+}
+
+
+@media(min-width: 1702px) {
+
+	.workstation {
+		width: 50%;
+		padding: 170px 2% 150px 15%;
+		margin-left: 20%;
 	}
 
-	 .navbar ul{
-		flex-basis: 70%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	 }
 
-	 .navbar-list li:last-child{
-		flex-basis: 35%;
-		width: 20%;
-		text-align: left;
-		font-size: 0.9em;
-	 }
+	.lounge {
+		width: 50%;
+		padding: 170px 2% 150px 18%;
+		margin-left: 20%;
+		margin-top: -30px;
+		position: absolute;
+		background-color: rgb(244, 239, 234);
+		z-index: -2;
+	}
+}
 
-	 .hamburger-menu::before{
-		font-family: "Font Awesome 5 Free";
-		font-size: 1.2em;
-		font-weight: 600;
-		content: "\f0c9";
+
+@media(max-width:1024px) {
+
+	.hamburger-menu {
+		display: contents;
 	}
 
-	.hamburger-menu span{
+	section .wrapper .section-title {
+		font-size: 2em;
+	}
+
+	section .wrapper .list-desc {
+		font-size: 1em;
+	}
+
+	section .wrapper .section-desc {
+		font-size: 1.1em;
+	}
+
+	.navbar li {
 		display: none;
+	}
+
+	.navbar-list {
+		flex-direction: row;
+	}
+
+	h1:hover~.navbar-list li {
+		display: block;
+		background-color: black;
+	}
+
+	.banner span {
+		font-size: 0.9em;
+	}
+
+	.benefits-img {
+		margin-left: 30%;
+	}
+	.navbar-list li:last-child {
+		flex-basis: 35%;
+		width: 80%;
+	}
+
+	.banner .wrapper {
+		padding-right: 30%;
+	}
+
+	.benefits ul {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.benefits h6 {
+		font-size: 1.2em;
+	}
+
+	.benefits li {
+		width: 40%;
+	}
+
+	.benefits p {
+		font-size: 0.9em;
+		margin-bottom: 30px;
+	}
+
+	.comparison .comparison-table {
+		overflow-x: auto;
+	}
+
+
+	.comparison p {
+		font-size: 0.9em;
+	}
+
+	.comparison-table td,
+	th {
+		font-size: 0.9em;
+	}
+
+	.testimonials li {
+		width: 50%;
+		flex-wrap: wrap;
+	}
+
+	.testimonials p {
+		font-size: 0.9em;
+		padding: 0 15%;
+	}
+
+	.testimonials-list li {
+		font-size: 0.9em;
+	}
+
+	.testimonials a {
+		width: 46%;
+		padding: 20px 3em;
+		margin: 15px 28% 0;
+	}
+
+	.testimonials .button{
+		width: 35%;
+		margin-left: 30%;
+	}
+
+
+	.faq-table th,
+	td {
+		font-size: 0.9em;
+	}
+
+	.faq .button{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	.offerings p {
+		font-size: 0.9em;
+	}
+
+	.offerings-section h4 {
+		font-size: 1.7em;
+	}
+
+	.offerings-section span {
+		font-size: 0.8em;
+	}
+	.meet-expert{
+		background-size: 70%;
+		background-position: bottom left;
+	}
+
+	.meet-expert {
+		padding-left: 0%;
+	}
+
+	.meet-expert .wrapper p {
+		padding: 15px 0 40px;
+		text-align: left;
+	}
+
+	/* .meet-expert .button{
+		margin-left: 50%;
+	} */
+
+	.meet-expert{
+		text-align: right;
+	}
+	.meet-expert a {
+		margin-left: 30%;
+	}
+
+	.workstation {
+		padding: 100px 2% 190px 10%;
+	}
+
+	.workstation figure {
+		width: 70%;
+	}
+
+	section .wrapper .offer-desc {
+		width: 100%;
+		font-size: 0.9em;
+		padding: 10px 0;
+	}
+
+	.conference,
+	.lounge {
+		width: 55%;
+		padding-top: 120px;
+		padding-bottom: 150px;
+	}
+
+	.conference{
+		padding-right: 0;
+	}
+
+	section .conference .offer-desc {
+		padding-right: 25%;
+	}
+	.lounge {
+
+		padding-left: 12%;
+		padding-right: 1%;
+	}
+	.end-question .button{
+		width: 60%;
+		margin-left: 20%;
+	}
+
+}
+
+
+@media (max-width: 800px) {
+	.workstation, .lounge, .conference{
+		padding-top: 40px;
+	}
+}
+@media (max-width: 580px) {
+	.hamburger-menu {
+		display: contents;
+	}
+
+	section .wrapper .offer-desc {
+		font-size: 0.7em;
+	}
+
+	section .wrapper .section-desc {
+		font-size: 0.9em;
+		padding: 15px 10% 40px;
+	}
+
+
+	section .wrapper .list-desc {
+		font-size: 0.8em;
+	}
+
+	section .wrapper .section-title {
+		font-size: 1.7em;
+	}
+
+	section .wrapper .button{
+		font-size: 0.7em;
+	}
+
+	.benefits .wrapper{
+		width: 100%;
+	}
+
+	.meet-expert{
+		background-size: 100%;
+		background-position: bottom;
+	}
+	.banner a {
+		padding: 15px 0;
+		font-size: 0.7em;
+	}
+
+	.comparison p {
+		padding: 0 0;
+	}
+
+	.banner .wrapper {
+		padding-right: 20%;
+	}
+
+	.banner h2 {
+		font-size: 2.4em;
+	}
+
+	.banner span {
+		font-size: 0.8em;
+	}
+
+	.navbar li {
+		display: none;
+	}
+
+	.navbar-list {
+		flex-direction: column;
+		gap: 20px;
+		color: black;
+		font-size: medium;
+	}
+
+	.navbar-list li:last-child {
+		flex-basis: 35%;
+		width: 100%;
+	}
+
+	.benefits-img {
+		margin-left: 23%;
+	}
+
+	.benefits ul {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	.benefits li {
+		width: 35%;
+		flex-wrap: wrap;
+	}
+
+	.benefits p {
+		text-align: center;
+		font-size: 0.8em;
+		line-height: 1.3em;
+	}
+
+	.benefits h6 {
+		font-size: 1.1em;
+	}
+
+	.comparison .wrapper {
+		width: 95%;
+	}
+
+	.comparison p {
+		font-size: 0.9em;
+	}
+
+	.comparison .comparison-table {
+		display: block;
+		overflow-x: scroll;
+	}
+
+	.comparison-table th,
+	td {
+		font-size: 0.7em;
+		min-width: 150px;
+	}
+
+	.five-stars::before {
+		font-size: 1em;
+	}
+
+	.testimonials ul {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.testimonials li {
+		max-width: 80%;
+		width: 50%;
+	}
+
+	.testimonials li span {
+		font-size: 0.8em;
+	}
+
+	.testimonials li h6 {
+		font-size: 0.9em;
+	}
+
+	.testimonials .button{
+		width: 50%;
+		margin-left: 25%;
 	}
 
 	.hamburger-menu{
-		display: none;
+		background-size: 100%;
 	}
 
-
-	 /* Styling Attributes for section banner */
-	 .banner{
-		background-image: url("/template/assets/images/banner/banner.jpg");
-		background-position:bottom;
-		opacity: 80%;
-		width: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding: 60px 0;
-		color: aliceblue;
-	 }
-
-	 
-
-	 .banner .wrapper{
-		padding-right: 45%;
-	 }
-
-	 .banner-title {
-		padding-top: 30px;
-		margin-bottom: 10px;
-		font-family: "Source Serif 4", serif;
-		font-size: 3.35em;
-		text-align: left;
-		font-weight: 600;
-		color: black;
-		line-height: 1em;
-	 }
-
-	 .banner .build-button{
-		flex-basis: 40%;
-		width: 63.5%;
-		padding: 12px 1em;
-		border-radius: 5px;
-		margin: 20px 0;
-		color: white;
-		background-color: black;
-		display: block;
-		text-align: center;
-	 }
-
-	 .banner li{
-		font-size: 1.1em;
-		margin: 8px 0;
-		color: black;
-	 }
-
-	 .navbar .build-button{
+	.meet-expert .wrapper {
 		width: 60%;
-		margin-left: 35%;
-	 }
+		margin-left: 20%;
+	}
 
-	 .navbar-list{
-		gap: 20px;
-		color: black;
-		font-size: 0.8em;
-	 }
-	 .build-button{
-		max-width: 60%;
-		width: 60%;
-		padding: 15px 1em;
-		border-radius: 5px;
-		margin: 20px 0;
+	.meet-expert .button {
+		margin-left: 60%;
+		padding: 15px 2em;
+		font-size: 0.9em;
+	}
+
+	.meet-expert .section-desc{
 		color: white;
-		background-color: black;
-		display: block;
-		text-align: center;
-	 }
-
-	 /* Styling Attributes for benefits section */
-	 .benefits{
-		padding: 60px 0 45px;
-	 }
-
-	.benefits h6{
-		font-family: "Mulish", sans-serif;
-		font-size: 1.4em;
-		text-align: center;
-		padding: 12px 10px 15px;
-		font-weight: 700;
-		line-height: 1.3em;
 	}
 
-	 .benefits ul{
-		display: flex;
-		flex-direction: row;
-	 }
-
-	 .benefits li {
-		margin: 0 20px;
-	 }
-
-	 section .wrapper .list-desc{
-		text-align: center;
-		font-size: 1em;
-		line-height: 1.3em;
+	.faq .wrapper {
+		width: 90%;
 	}
 
-	section .wrapper .section-desc{
-		padding: 15px 18% 40px;
-		text-align: center;
-		font-size: 1.3em;
-		line-height: 1.3em;
-		
+	.featured-in h6 {
+		font-size: 0.7em
 	}
 
-
-	.benefits-img{
-		width: 6.5em;
-		padding: 5px;
-		border-radius: 50px;
-		margin-left: 25%;		
-		background-color: rgb(244, 239, 234);
+	.faq .button{
+		width: 50%;
+		margin-left: 25%;
 	}
 
-	/* Styling Attributes for Featured-in */
-	/* Styling Attributes for trusted-by */
-
-		.customers ul {
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-		}
-	
-		.customers li {
-			width: 10%;
-		}
-	
-		.customers h6 {
-			font-family: "Mulish", sans-serif;
-			font-size: 1.4em;
-			text-align: center;
-			padding: 10px 10px 0;
-			font-weight: 600;
-			line-height: 1em;
-		}
-
-		.customers{
-			text-align: center;
-			background-color: rgb(48,68,46);
-			color: white;
-		}
-
-
-		/* Styling Attributes for Offerings */
-		.offerings .wrapper{
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			padding: 40px 0;
-		}
-
-		.offerings-section{
-			display: flex;
-		}
-
-
-		.offerings h3{
-			text-align: left;
-			font-size: 2.9em;
-			font-weight: 600;
-			font-family: "Source Serif 4", serif;
-
-		}
-
-
-		.offerings-section span{
-			display: block;
-			width: 100%;
-			text-align: left;
-		}
-
-		.offerings-section p {
-			text-align: left;
-			padding: 0;
-			margin: 20px 0;
-			font-size: 1.15em;
-		}
-
-		.workstation{
-			width: 63%;
-			padding: 170px 7% 150px 15%;
-			margin-left: 37%;
-			position: absolute;
-			background-color:  rgb(244, 239, 234);
-			z-index: -2;
-		}
-		
-		.conference{
-			color: white;
-			width: 47%;
-			padding: 170px 10% 150px 2%;
-			margin-right: 35%;
-			position: absolute;
-			background-color: rgb(48,68,46);
-			z-index: -1;
-		}
-
-		.lounge{
-			width: 50%;
-			padding: 120px 10% 50px;
-			margin-left:43%;
-			margin-top: -30px;
-			position: absolute;
-			background-color:  rgb(244, 239, 234);
-			z-index: -2;
-		}
-
-		.offerings-one figure{
-			width: 46%;
-			padding: 50px 20px 50px 0;	
-		}
-
-		.offerings-two figure{
-			width: 70%;
-			padding: 30px 20px;
-			margin-left: 43%;
-		}
-		.offerings-three figure{
-			width: 50%;
-			padding: 30px 20px;
-			margin-top: 10px;
-		}
-
-		.offer-btn{
-			border-radius: 5px;
-			padding: 10px 2em;
-			color: white;
-			background-color: rgb(48,68,46);
-		}
-	
-		.offerings-two .offer-btn{
-			color: Black;
-			background-color: White;
-			border-color: black;
-
-		}
-		
-
-	/* Styling Attributes for Coparison */
-	.comparison{
-		background-color: rgb(244, 239, 234);
-		text-align: center;
-		padding: 53px 10% 60px;
-	}
-	
-	.comparison-table tr td:first-child{
-		text-align: left;
-	}
-
-	.comparison-table tr td:nth-child(2){
-		width: 20%;
-		border-left: 3px solid green;
-		border-right: 3px solid green;
-	}
-
-	.comparison-table th:nth-child(2){
-		border-left: 3px solid green;
-		border-right: 3px solid green;
-		border-top: 3px solid green;
-	}
-
-	.table-border-bottom{
-		border-bottom: 3px solid green;
-	}
-
-	.comparison table{
-		justify-content: center;
-		max-width: 100%;
-		width: 100%;
-		padding: 0 0%;
-	}
-
-	.comparison-table {
-		border-collapse: collapse;
-		overflow-x: auto;
-		width: 70%;
-		padding: 0 5%;
-	}
-		
-	.comparison-table th, td {
-		padding: 8px;
-		text-align: center;
-		border-bottom: 1px solid #ddd;
-		line-height: 1.6em;
-	}
-
-	/* Styling Attributes for Testimonial section */
-	.testimonials{
-		padding: 43px 0 53px;
-		background-color: white;
-	}
-
-
-	.testimonials li{
-		text-align: center;
-		max-width: 50%;
-		width: 28%;
-		padding: 10px 1%;
+	.offerings-section {
 		flex-wrap: wrap;
+		flex-direction: column;
 	}
 
-	.testimonials i{
-		display: block;
-		margin: 35px 0 10px;
-	}
-
-	.testimonials h6{
-		margin: 17px 0 7px;
-		font-size: 1.1em;
-		font-weight: 800;
-	}
-
-	.testimonials span{
-		font-size: 1.1em;
-	}
-
-	.testimonials-list{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-	/* Styling Attributes for meet-expert */
-	.meet-expert{
-		padding: 85px 0;
-		background-image: url("/template/assets/images/banner/banner.jpg");
-		background-position: bottom;
-		width: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		color: rgb(0, 0, 0);
-	}
-
-	.meet-expert .wrapper{
-		width: 35%;
-		margin-left:52%;
-	}
-
-	.meet-expert .wrapper .section-title{
-		text-align:  left;
-	}
-
-	.meet-expert .wrapper .section-desc{
-		text-align: left;
-		padding-left: 0;
-	}
-	.meet-expert a {
-		padding: 15px 3em;
-		border-radius: 5px;
-		margin: 23px 0 20px;
-		color: white;
-		background-color: black;
-	}
-
-
-	/* Styling Attributes for FAQ */
-
-	.faq .wrapper{
-		width: 70%;
-	}
-	.faq{
-		padding: 47px 0 42px;
-		text-align: left;
-		background-color: rgb(244, 239, 234);
-	}
-
-	.faq-table th{
-		font-family: "Source Serif 4", serif;
-				max-width: 40%;
-		width: 15%;
+	.offerings-section h4 {
 		font-size: 1.2em;
-		font-weight: 700;
 	}
 
-	.faq table td,
-	tr {
-		border-bottom: none;
-		font-size: 1em;
-		text-align: left;
-	}
-
-	.faq td{
-		width: 40%;
-		padding-left: 11%;
-	}
-
-	.faq-table{
-		border-spacing: 0 10px;
-		margin-bottom: 20px;
-	}
-
-	.build-button{
-		width: 25%;
-		padding: 10px 2em;
-		border-radius: 5px;
-		border-color: black;
-		border-style: solid;
-		border-width: 2px;
-		margin: 20px 36%;
-		color: black;
-		background-color: white;
-		text-align: center;
-	}
-
-	.faq .build-button {
-		background-color: rgb(48,68,46);
-		color: white;
-	}
-	/* Styling Attributes for end-question */
-	.end-question .wrapper{
+	.offerings .button{
 		width: 70%;
-		padding: 150px 0 54px;
-		display: flex;
-		justify-content: space-between;
+		padding: 5px 1em;
+		font-size: 0.5em;
 	}
 
-	.end-question img{
-		width: 125%;
+	.offering .section-desc{
+		padding: 15px 18% 40px;
 	}
 
-	.end-question-right{
-		flex-basis: 65%;
-		text-align: center;
+	.offerings-section span {
+		font-size: 0.8em;
 	}
-
-	.end-question figure{
-		width: 20%;
-	}
-
-	.end-question a{
-		width: 30%;
-		padding: 10px 3em;
-		border-radius: 5px;
-		border-color: black;
-		border-style: solid;
-		border-width: 2px;
-		color: black;
-		background-color: white;
-		text-align: center;
-		margin: 30px 35% 0;
-	}
-	/* Styling Attributes for icons */
-		
-	.banner-list-item::before{
-		font-family: "Font Awesome 5 Free";
-		font-weight: 400;
-		content: "\f058";
-		margin-right: 10px;
-	}
-
-	.five-stars::before{
-		font-family: "Font Awesome 5 Free";
-		font-weight: 400;
-		font-size: 1.6em;
-		content: "\f006\f005\f005\f005\f005";
-		color: dimgray;
-	}
-
-	.five-stars span{
-		display: none;
-	}
-
-
-	@media(min-width: 1702px){
-	
-		.workstation{
-			width: 50%;
-			padding: 170px 2% 150px 15% ;
-			margin-left: 20%;
-		}
-		
-
-		.lounge{
-			width: 50%;
-			padding: 170px 2% 150px 18% ;
-			margin-left:20%;
-			margin-top: -30px;
-			position: absolute;
-			background-color:  rgb(244, 239, 234);
-			z-index: -2;
-		}
-	}
-
-
-	@media (min-width: 580px) and (max-width:1024px) {
-
-		.hamburger-menu{
-			display:contents;
-		}
-
-		section .wrapper .section-title{
-			font-size: 2em;
-		}
-
-		section .wrapper .list-desc{
-			font-size: 1em;
-		}
-	
-		section .wrapper .section-desc{
-			font-size: 1.1em;			
-		}
-
-		.navbar li{display: none;}
-
-		.build-button{
-			padding: 10px 3em;
-		}
-		.navbar-list{
-			flex-direction: row;
-		}
-
-		h1:hover~ .navbar-list li {
-			display: block;
-			background-color: black;
-		}
-
-		.banner span{
-			font-size: 0.9em;
-		}
-		
-		 .navbar-list li:last-child{
-			flex-basis: 35%;
-			width: 80%;
-		 }
-		 
-		 .navbar .build-button{
-			max-width: 40%;
-			width: 40%;
-			margin-left: 30%;
-		 }
-		 
-
-		.banner .wrapper{
-			padding-right: 30%;
-		}
-		.build-button{
-			padding: 10px 1em ;
-		}
-		.benefits ul{
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-
-		.benefits h6{
-			font-size: 1.2em;
-		}
-
-		.benefits li{
-			width: 40%;
-		}
-
-		.benefits p{
-			font-size: 0.9em;
-			margin-bottom: 30px;
-		}
-
-		.comparison .comparison-table{
-			overflow-x:auto;
-		}
-
-
-		.comparison p{
-			font-size: 0.9em;
-		}
-		.comparison-table td, th{
-			font-size: 0.9em;
-		}
-
-		.testimonials li{
-			width: 50%;
-			flex-wrap: wrap;
-		}
-
-		.testimonials p{
-			font-size: 0.9em;
-			padding: 0 15%;
-		}
-
-		.testimonials-list li{
-			font-size: 0.9em;
-		}
-
-		.testimonials a {
-			width: 46%;
-			padding: 20px 3em;
-			margin: 15px 28% 0;
-		}
-		.testimonials .build-button{
-			width: 40%;
-			margin:20px 29%;
-		}
-
-		.faq-table th,td{
-			font-size: 0.9em;
-		}
-		.faq .build-button{
-			width: 40%;
-			padding: 10px 1em;
-			margin:20px 29%;
-			background-color: rgb(48,68,46);
-			color: white;
-		}
-		.end-question .button2{
-			width: 70%;
-			margin: 30px 15% 0;
-		}
-
-		.offerings p {
-			font-size: 0.9em;
-		}
-
-		.offerings-section h3 {
-			font-size: 1.5em;
-		}
-
-		.offerings-section span {
-			font-size: 0.8em;
-		}
-
-		.offer-btn {
-			padding: 5px 1em;
-			border-radius: 5px;
-			font-size: 00.6em;
-		}
-
-		.meet-expert .wrapper{
-			width: 60% ;
-			margin-left: 20%;
-		}
-
-		.meet-expert .wrapper p{
-			padding: 15px 0 40px;
-			text-align: center;
-		}
-
-		.meet-expert a{
-			margin-left: 30%;
-		}
-		.workstation {
-			padding: 100px 19% 190px 19%;
-		}
-
-		.workstation figure {
-			width: 70%;
-		}
-
-		section .wrapper .offer-desc{
-			font-size: 0.7em;
-		}
-
-		.conference, .lounge {
-			width: 55%;
-			padding-top: 120px;
-			padding-bottom: 150px;
-		}
-
-		.conference p {
-			padding-right: 20%;
-		}
-
-		.lounge {
-			
-			padding-left: 15%;
-		}
-	}
-
-	@media (max-width: 580px) {
-		.hamburger-menu{
-			display:contents;
-		}
-	
-		section .wrapper .offer-desc{
-			font-size: 0.7em;
-		}
-
-		section .wrapper .section-desc{
-			font-size: 0.9em;
-			padding: 15px 0 40px;
-		}
-
-		.offerigs-desc{
-			font-size: 0.9em;
-			padding: 15px 10% 40px;
-		}
-
-		section .wrapper .list-desc{
-			font-size: 0.8em;
-		}
-
-		section .wrapper .section-title{
-			font-size: 1.7em;
-		}
-		.banner a{
-			padding: 15px 0;
-			font-size: 0.7em;
-		}
-
-		.build-button{
-			padding: 15px 0;
-			font-size: 0.7em;
-		}
-
-		.end-question .button2{
-			padding: 15px 0;
-		}
-		.comparison p{
-			padding: 0 0;
-		}
-
-		.banner .wrapper{
-			padding-right: 20%;
-		}
-	
-		.banner h2{
-			font-size: 2.4em;
-		}
-
-		.banner span{
-			font-size: 0.8em;
-		}
-
-		.navbar li{display: none;}
-
-			.navbar-list{
-			flex-direction: column;
-			gap: 20px;
-			color: black;
-			font-size: medium;
-		 }
-
-		 .navbar-list li:last-child{
-			flex-basis: 35%;
-			width: 100%;
-		 }
-		 
-		 .navbar .build-button{
-			max-width: 40%;
-			width: 40%;
-			margin-left: 30%;
-			font-size: 0.8em;
-		 }
-
-		 .benefits-img{
-			margin-left: 23%;		
-		 }
-		.benefits ul{
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 30px;
-		}
-
-		.benefits li{
-			width: 35%;
-			flex-wrap: wrap;
-		}
-		
-		.benefits p{
-			text-align: center;
-			font-size: 0.8em;
-			line-height: 1.3em;
-		}
-
-		.benefits h6{
-			font-size: 1.1em;
-		}
-
-		.comparison .wrapper{
-			width: 95%;
-		}
-
-		.comparison p{
-			font-size: 0.9em;
-		}
-		.comparison .comparison-table{
-			display: block;
-			overflow-x:scroll;
-		} 
-
-		.comparison-table th, td{
-			font-size: 0.7em;
-			min-width: 150px;
-		}
-
-		.five-stars::before {
-			font-size: 1em;	
-		}
-
-		.testimonials ul{
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.testimonials li{
-			max-width: 80%;
-			width: 50%;
-		}
-
-		.testimonials li span{
-			font-size: 0.8em;
-		}
-
-		.testimonials li h6{
-			font-size: 0.9em;
-		}
-
-		.testimonials .build-button{
-			max-width: 70%;
-			width: 60%;
-			margin: 10px 21%;
-		}
-
-		.meet-expert .wrapper{
-			width: 60% ;
-			margin-left: 20%;
-		}
-
-
-		.meet-expert a{
-			margin-left: 25%;
-			padding: 15px 2em;
-			font-size: 0.9em;
-		}
-
-		.faq .wrapper{
-			width: 90%;
-		}
-
-		.featured-in h6{
-			font-size: 0.7em
-		}
-
-		.offerings-section{
-			flex-wrap: wrap;
-			flex-direction: column;
-		}
-
-		.offerings p:first-child{
-			padding: 15px 10% 40px;
-		}
-		.offerings-section h3{
-			font-size: 1.5em;
-		}
-
-		.offerings-section span{
-			font-size: 0.8em;
-		}
-
-		.offer-btn{
-			padding: 5px 1em;
-			border-radius: 5px;
-			font-size: 00.6em;
-		}
-		
-		.workstation{
-			padding: 20px 0 100px 10%;
-			flex-wrap: wrap;
-		}
-
-		.workstation figure{
-			width: 70%;
-			position: absolute;
-		}
-
-		.offerings-two figure{
-			width: 60%;
-			margin-left: 40%;
-		}
-
-		.conference{
-			width: 50%;
-			padding-top: 50px;
-			padding-bottom:80px;
-		}
-
-		.lounge{
-			width: 55%;
-			padding-top: 40px;
-			padding-bottom: 50px;
-		}
-
-		.trusted-by h5{
-			font-size: 0.7em;
-		}
-		.faq-table{
-			display: block;
-			overflow-x: scroll;
-		}
-
-		.faq-table th{
-			min-width: 200px;
-		}
-
-		.faq-table  tr td{
-			min-width: 600px;
-			font-size: 0.7em;
-		}
-		.faq .build-button{
-			width: 60%;
-			padding: 10px 1em;
-			margin:20px 25%;
-		}
-
-		.faq-table th{
-			font-size: 0.8em;
-		}
-
-		.trusted-by h6{
-			font-size: 0.5em;
-		}
-		.end-question .wrapper{
-			flex-direction: column;
-			align-items: center;
-			padding-top: 50px;
-		}
-		
-		.end-question figure{
-			max-width: 100%;
-			width: 70%;
-		}
-
-		.end-question .button2{
-			width: 60%;
-			margin: 30px 20% 0;
-		}
-	}
-
-	@media(max-width: 425px){
-		.benefits-img{
-			margin-left: 15%;
-		}
-		.benefits li{
-			width: 50%;
-			flex-wrap: wrap;
-		}
 
 	.workstation {
-			padding: 20px 0 100px 10%;
-		}
-	
-		.workstation figure {
-			width: 70%;
-			position: absolute;
-		}
-	
-		.offerings-two figure {
-			width: 60%;
-			margin-left: 40%;
-		}
-		
-		.conference p {
-			padding-right: 7%;
-		}
-
-		section .wrapper .section-desc {
-			font-size: 0.5em;
-		}
-
-		section .wrapper .offer-desc{
-			font-size: 0.5em;
-		}
-
-		.section-desc{
-			font-size: 0.7em;
-		}
-		
-		.offerings p{
-			font-size: 0.7em;
-		}
-	
-		.conference {
-			width: 50%;
-			padding-top: 50px;
-			padding-bottom: 80px;
-		}
-
-	
-		.lounge {
-			padding-top: 40px;
-		}
-
+		padding: 20px 0 100px 10%;
+		flex-wrap: wrap;
 	}
+
+	.workstation figure {
+		width: 70%;
+		position: absolute;
+	}
+
+	.offerings-two figure {
+		width: 60%;
+		margin-left: 40%;
+	}
+
+	.conference {
+		width: 50%;
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
+
+	.lounge {
+		width: 55%;
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+
+	.trusted-by h5 {
+		font-size: 0.7em;
+	}
+
+	.faq-table {
+		display: block;
+		overflow-x: scroll;
+	}
+
+	.faq-table th {
+		min-width: 200px;
+	}
+
+	.faq-table tr td {
+		min-width: 600px;
+		font-size: 0.7em;
+	}
+
+
+	.faq-table th {
+		font-size: 0.8em;
+	}
+
+	.trusted-by h6 {
+		font-size: 0.5em;
+	}
+
+	.end-question .wrapper {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 50px;
+	}
+
+	.end-question .button{
+		width: 40%;
+		margin-left: 30%;
+		font-size: 0.7em;
+	}
+
+	.end-question figure {
+		max-width: 100%;
+		margin-top: 10%;
+		width: 70%;
+	}
+	
+}
+
+@media(max-width: 485px) {
+	.benefits-img {
+		margin-left: 25%;
+	}
+
+	.benefits li {
+		width: 50%;
+		flex-wrap: wrap;
+		margin: 0;
+	}
+
+	.workstation {
+		padding: 20px 0 100px 10%;
+	}
+
+	.workstation figure {
+		width: 70%;
+		position: absolute;
+	}
+
+	.offerings-two figure {
+		width: 60%;
+		margin-left: 40%;
+	}
+
+	.conference p {
+		padding-right: 7%;
+	}
+
+	section .wrapper .section-desc {
+		font-size: 0.8em;
+	}
+
+	section .wrapper .offer-desc {
+		font-size: 0.5em;
+	}
+	.section-desc {
+		font-size: 0.7em;
+	}
+
+	.offerings p {
+		font-size: 0.7em;
+	}
+
+	.conference {
+		width: 50%;
+		padding: 20px 2% 80px;
+	}
+
+
+	.lounge {
+		padding-top: 40px;
+	}
+
+}
