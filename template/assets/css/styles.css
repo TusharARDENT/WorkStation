@@ -823,7 +823,6 @@ tr {
 	.meet-expert {
 		text-align: right
 	}
-
 	.meet-expert a {
 		margin-left: 30%
 	}
@@ -979,7 +978,7 @@ tr {
 	}
 
 	.comparison p {
-		font-size: .9em
+		font-size: 0.9em
 	}
 
 	.comparison .comparison-table {
